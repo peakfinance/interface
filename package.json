@@ -54,6 +54,7 @@
     "web3": "^1.2.11"
   },
   "scripts": {
+    "prestart": "node init.js && echo Pulling client secrets down... && sleep 3",
     "start": "sh -ac '. .env; react-scripts start'",
     "build": "sh -ac '. .env; react-scripts --max_old_space_size=4096 build'",
     "test": "react-scripts test",
