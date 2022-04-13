@@ -8,6 +8,7 @@ interface LabelProps {
 }
 
 const Label: React.FC<LabelProps> = ({ text, variant = 'secondary', color: customColor }) => {
+  // @ts-ignore
   const { color } = useContext(ThemeContext);
 
   let labelColor: string;

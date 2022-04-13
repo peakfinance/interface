@@ -4,6 +4,7 @@ import { ThemeContext } from 'styled-components';
 import Icon, { IconProps } from '../Icon';
 
 const RemoveIcon: React.FC<IconProps> = ({ color }) => {
+  // @ts-ignore
   const { color: themeColor } = useContext(ThemeContext);
   return (
     <Icon>

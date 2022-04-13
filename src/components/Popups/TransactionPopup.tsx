@@ -18,6 +18,7 @@ export default function TransactionPopup({
   summary?: string;
 }) {
   const { chainId } = useWallet();
+  // @ts-ignore
   const theme = useContext(ThemeContext);
 
   return (

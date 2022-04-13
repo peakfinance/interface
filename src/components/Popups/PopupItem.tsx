@@ -65,7 +65,7 @@ export default function PopupItem({
       clearTimeout(timeout);
     };
   }, [removeAfterMs, removeThisPopup]);
-
+  // @ts-ignore
   const theme = useContext(ThemeContext);
 
   let popupContent;

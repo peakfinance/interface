@@ -11,6 +11,7 @@ interface DialProps {
 }
 
 const Dial: React.FC<DialProps> = ({ children, disabled, size = 256, value }) => {
+  // @ts-ignore
   const { color } = useContext(ThemeContext);
 
   return (

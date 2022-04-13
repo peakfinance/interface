@@ -15,6 +15,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ children, disabled, href, onClick, size, text, to, variant }) => {
+  // @ts-ignore
   const { color, spacing } = useContext(ThemeContext);
 
   let buttonColor: string;
